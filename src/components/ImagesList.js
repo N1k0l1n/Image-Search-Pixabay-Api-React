@@ -8,8 +8,7 @@ const ImagesList = (props) => {
     <div
       style={{
         position: "relative",
-        width: "200x",
-        height: "200px",
+        width: "100%",
         display: "grid",
         columnGap: " 50px",
         rowGap: "50px",

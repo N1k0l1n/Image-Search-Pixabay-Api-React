@@ -1,0 +1,45 @@
+.space {
+  height: 3vh;
+  background: rgb(197, 222, 234);
+  background: linear-gradient(
+    0deg,
+    rgba(197, 222, 234, 1) 0%,
+    rgba(13, 10, 66, 1) 100%
+  );
+}
+
+.ground {
+  background-color: #000;
+  height: 25vh;
+  color: #fff;
+}
+
+.ground:before {
+  content: "";
+  display: inline-block;
+  background: url(https://www.ortussolutions.com/__media/moon-footer-fadeout.svg)
+    repeat-x;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  position: relative;
+  top: -10px;
+  height: 90px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.foo-content {
+  padding: 0;
+  text-align: center;
+  .mailing-wrap {
+    margin: 20px 0;
+    a {
+      color: #8fc73e;
+      text-decoration: none;
+      font-family: Open Sans;
+      font-size: 12px;
+    }
+  }
+}

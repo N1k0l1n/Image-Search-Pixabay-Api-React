@@ -2,6 +2,9 @@ import React from "react";
 import SearchInput from "./SearchInput";
 import axios from "axios";
 import ImagesList from "./ImagesList";
+import Footer from "./Footer";
+
+import "./app.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -22,10 +25,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={{ marginTop: "30px" }}>
-        <SearchInput onSearchSubmit={this.onSearchSubmit} />
-        <div>
+      <div id="holder">
+        <div id="header">
+          <SearchInput onSearchSubmit={this.onSearchSubmit} />
+        </div>
+        <div id="body">
           <ImagesList images={this.state.images} />
+        </div>
+        <div id="footer">
+          <Footer className="fstyle" />
         </div>
       </div>
     );
